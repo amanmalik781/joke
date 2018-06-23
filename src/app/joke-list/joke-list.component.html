@@ -3,8 +3,8 @@
     *ngFor="let joke of jokes">
     <h3 class="card-title">{{joke.setup}}</h3>
     
-    <p class="card-text" [hidden]="joke.hide">{{joke.punchline}}</p>
-    <a href="#" class="btn btn-primary" (click)="toggle(joke)">tell me</a>
+    <h4 class="card-text" [hidden]="joke.hide">{{joke.punchline}}</h4>
+    <a href="#" class="btn btn-primary" (click)="joke.toggle()">tell me</a>
     
     </div>
    
